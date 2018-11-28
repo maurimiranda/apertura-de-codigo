@@ -1,49 +1,100 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>Apertura de Código</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css">
+    <link rel="stylesheet" href="css/main.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Software Libre y Apertura de Código</h2>
+          <h4>Conceptos básicos y dudas recurrentes</h4>
+          <img width="500" height="auto" data-src="./images/geoinquietos_logo.png" alt="Geoinquietos" class="plain">
+        </section>
+        <section>
+          <section>
+            <h1>Libertad</h1>
+            <h4>¿Quién es libre? ¿De qué? ¿Por qué?</h4>
+          </section>
+          <section>
+            <h2>Libertades</h2>
+            <ul>
+              <li>Usar</li>
+              <li>Estudiar</li>
+              <li>Distribuir</li>
+              <li>Modificar</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Beneficiarios</h2>
+            <p class="fragment">Usuario Final</p>
+            <p class="fragment">Empresas</p>
+            <p class="fragment">Organismos Públicos</p>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+            <aside class="notes">
+              Usuario: piratería legal
+              <br />
+              Empresas: Nuevo modelo de negocios: transparente, colaborativo. Desarrollo profesional de los miembros del equipo. Lo veremos en el siguiente bloque.
+              <br />
+              Organismos: optimización de presupuesto, transparencia, desarrollo profesional, colaboración interinstitucional
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>¡NO QUIERO LIBERAR!</h1>
+          </section>
+          <section>
+            <h2>Ignorancia</h2>
+          </section>
+          <section>
+            <h2>Miedo</h2>
+          </section>
+          <section>
+            <h2>Corrupción</h2>
+          </section>
+          <section>
+            <h2>Falta de proveedores</h2>
+          </section>
+        </section>
+        <section>
+          <h2>¡Muchas Gracias!</h2>
+          <img width="500" height="auto" data-src="./images/foss4g-ar_logo.png" alt="FOSS4G-AR" class="plain">
+        </section>
+      </div>
+    </div>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  </body>
 </html>
